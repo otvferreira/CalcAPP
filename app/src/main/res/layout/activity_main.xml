@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Display de resultados -->
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:gravity="end"
+        android:padding="16dp"
+        android:background="#003DA5"
+    android:textColor="#FFFFFF"
+    android:text="0" />
+
+    <!-- Grade de botões -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="5"
+        android:columnCount="4"
+        android:paddingTop="16dp">
+
+        <!-- Primeira linha -->
+        <Button android:id="@+id/btnClear" android:text="C" android:backgroundTint="#003DA5" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/btnDivide" android:text="/" android:backgroundTint="#003DA5" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/btnMultiply" android:text="*" android:backgroundTint="#003DA5" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/btnDelete" android:text="DEL" android:backgroundTint="#003DA5" android:textColor="#FFFFFF" />
+
+        <!-- Segunda linha -->
+        <Button android:id="@+id/btn7" android:text="7" android:backgroundTint="#003DA5" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/btn8" android:text="8" android:backgroundTint="#003DA5" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/btn9" android:text="9" android:backgroundTint="#003DA5" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/btnSubtract" android:text="-" android:backgroundTint="#003DA5" android:textColor="#FFFFFF" />
+
+        <!-- Terceira linha -->
+        <Button android:id="@+id/btn4" android:text="4" android:backgroundTint="#003DA5" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/btn5" android:text="5" android:backgroundTint="#003DA5" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/btn6" android:text="6" android:backgroundTint="#003DA5" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/btnAdd" android:text="+" android:backgroundTint="#003DA5" android:textColor="#FFFFFF" />
+
+        <!-- Quarta linha -->
+        <Button android:id="@+id/btn1" android:text="1" android:backgroundTint="#003DA5" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/btn2" android:text="2" android:backgroundTint="#003DA5" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/btn3" android:text="3" android:backgroundTint="#003DA5" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/btnEquals" android:text="=" android:backgroundTint="#003DA5" android:textColor="#FFFFFF" />
+
+        <!-- Última linha -->
+        <Button android:id="@+id/btn0" android:layout_columnSpan="2" android:text="0" android:backgroundTint="#003DA5" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/btnDot" android:text="." android:backgroundTint="#003DA5" android:textColor="#FFFFFF" />
+    </GridLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/cruzeiro_logo" />
+
+
+</LinearLayout>
